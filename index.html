@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+        <div class="header__img">
+          <img
+            src="./img/Logo Weartake.svg"
+            alt="Imagem da logotipo Weartake"
+          />
+        </div> 
+        <nav class="header__nav">
+          <ul>
+            <li><a onclick='filtraCategoria("Todos") 'href="#"><b>Todos</b></a></li>
+            <li><a onclick='filtraCategoria("Acessórios") 'href="#">Acessórios</a></li>
+            <li><a onclick='filtraCategoria("Calcados") 'href="#">Calçados</a></li>
+            <li><a onclick='filtraCategoria("Camisetas") 'href="#">Camisetas</a></li>
+          </ul>
+        </nav>
+  </header>
+  <main class="container">
+    <div class="container-row">
+      <section class="products-section">
+        <main class="products-content">
+          <ul class="product-list">
+          </ul>
+        </main>
+      </section>
+      <section class="cart-section">
+        <div class="cart-search">
+          <input type="text"  placeholder="Digite aqui sua pesquisa"name="" id="">
+          <button type="submit">Pesquisar</button>
+        </div>
+        <div class="cart">
+          <h5>Carrinho de Compras</h5>
+        </div>
+        <div class="cart-list">
+        </div>
+        <div class="cart-total">
+
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="./js/index.js"></script>
+</body>
+</html>
